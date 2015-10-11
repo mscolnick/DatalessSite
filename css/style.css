@@ -81,7 +81,7 @@ background setup
     right: 0;
     z-index: -1;
 
-    background: url(../imgs/header_back.jpeg) no-repeat center bottom;
+    background: url(../imgs/country.jpeg) no-repeat center bottom;
 
     width:100%;
     min-height:501px;
@@ -135,7 +135,11 @@ h3{
 }
 
 .signup{
-    background: url(../imgs/2.jpg) no-repeat center center fixed;
+    background:
+        linear-gradient(
+           rgba(10, 10, 10, 0.6),
+           rgba(10, 10, 10, 0.6)
+        ), url(../imgs/grass.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -160,7 +164,15 @@ h3{
 .feat{
     font-size: 40px !important;
 }
-
+/*
+.overlay-layer {
+    background-color: rgba(248, 247, 216, 0.7);
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}*/
 
 /******************************************************************************************************************************
 FORM CONTROL
