@@ -50,7 +50,7 @@ background setup
 .header{
     margin: 0 !important;
     font-family: myFont !important;
-    letter-spacing: .1em;
+    letter-spacing: .01em;
     text-align: center;
     text-shadow: 1px 1px 3px black;
     color: white;
