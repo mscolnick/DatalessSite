@@ -57,7 +57,7 @@ background setup
     font: 32px;
     font-weight: 600;
     /*font-size: 36px !important;*/
-    /*text-shadow: 1px 1px 3px black;*/
+    text-shadow: 1px 1px 3px black;
 }
 
 .feature {
@@ -120,22 +120,18 @@ h3{
     text-transform: uppercase !important;
 }
 
-.content1 {
-    background-color: #21314a;
-    color: #ecf0f1;
+.content1{
+    background-color: #ecf0f1;
+    color: #21314a;
     line-height: 1.7em;
     padding: 50px 0;
 }
 
-.content2 {
-    background-color: white;
-    color: #34495e;
+.content2{
+    background-color: #34495e;
+    color: white;
     line-height: 2em;
     padding: 50px 0;
-}
-
-.notified {
-    color:white ;
 }
 
 .signup{
