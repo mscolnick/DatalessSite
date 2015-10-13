@@ -1,62 +1,24 @@
 @font-face {
-    font-family: myFont;
+    font-family: newFont;
     src: url(../fonts/Lintel-Regular.otf);
 }
-
-/******************************************************************************************************************************
-Full Screen
-*******************************************************************************************************************************/
-
-html, body {
-    /* give this to all tags from html to .fullscreen */
-    height:100%;
-}
-.fullscreen,
-.content-a {
-    min-height:100%;
-}
-.not-fullscreen,
-.not-fullscreen .content-a,
-.fullscreen.not-overflow,
-.fullscreen.not-overflow .content-a {
-    height:100%;
-    overflow:hidden;
-}
-
 
 /******************************************************************************************************************************
 background setup
 *******************************************************************************************************************************/
 
-.navigation{
-    right: 15px;
-    top: 15px;
-    z-index: 999;
-    position: fixed;
-    font: 25px;
-}
-
-.navigation span{
-    padding: 12px;
-    margin: 3px;
-    background-color: rgba(100,200,50,.6);
-}
-
-.navigation span:hover{
-    cursor: pointer;
-    cursor: hand;
+h1, h2, h3, h4, h5, h6 {
+    font-family: newFont !important;
 }
 
 .mission h1{
-    padding: 10px 0 0 0;
+    padding-top: 10px;
 }
 
 .mission h2{
-    font-family: myFont !important;
-    padding: 10px 50px;
+    padding: 10px 0;
     font: 32px;
     font-weight: 600;
-    /*font-size: 36px !important;*/
     text-shadow: 1px 1px 3px black;
 }
 
@@ -64,11 +26,26 @@ background setup
     padding: 20px 0;
 }
 
+@media screen and (min-width: 651px) {
+  .header h1 {
+    font-size: 100px;
+  }
+  .header h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header h1 {
+    font-size: 70px;
+  }
+  .header h2 {
+    font-size: 30px;
+  }
+}
+
 .header{
-    margin: 0 !important;
-    font-family: myFont !important;
     letter-spacing: .1em;
-    text-align: center;
     text-shadow: 1px 1px 3px black;
     color: white;
     height: 500px;
@@ -97,27 +74,21 @@ background setup
     filter: blur(1px);
 }
 
-
 .header h1{
-    font-size: 110px;
     letter-spacing: .03em;
     font-weight: 900;
-    margin: 0;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
 .header h2{
-    font-size: 45px;
     letter-spacing: .03em;
-    margin: 0;
     padding-top: 40px;
     padding-bottom: 30px;
 }
 
-
-h3{
-    text-transform: uppercase !important;
+.feature h3{
+    text-transform: uppercase;
 }
 
 .content1{
@@ -146,33 +117,27 @@ h3{
     background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .signup input {
+    margin: 0 10px;
+  }
+}
+
 .footer{
-    background-color: #403c3c;
+    background-color: #2c3e50;
     color: #827c7c;
-    text-align: center;
-    padding: 15px 10px;
-    margin: 0 !important;
+    padding: 15px 0;
     letter-spacing: .1em;
-    min-width: 800px;
 }
 
 .us{
-    color: #1192ce;
-    font-weight: 800;
+    color: white;
+    font-weight: 600;
 }
 
 .feat{
     font-size: 40px !important;
 }
-/*
-.overlay-layer {
-    background-color: rgba(248, 247, 216, 0.7);
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}*/
 
 /******************************************************************************************************************************
 FORM CONTROL
@@ -180,7 +145,6 @@ FORM CONTROL
 
 .form-control{
     background-color: transparent !important;
-    margin: 0 10px !important;
     border: 1px solid #1871b6 !important;
     color: #1871b6 !important;
 }
@@ -189,7 +153,6 @@ FORM CONTROL
     border: 1px solid #88FFC9 !important;
     color: #88FFC9 !important;
     box-shadow: none !important;
-
 }
 
 .form-control:focus::-webkit-input-placeholder {
